@@ -1,0 +1,30 @@
+.form{
+    margin-top: 50px;
+    display: flex;
+    width: 40vw;
+    justify-self: center;
+    justify-content: space-between;
+}
+
+.input{
+    width: 70%;
+    border: none;
+    border-radius: 23px;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.button{
+    background-color: #fff;
+    border: none;
+    border-radius: 23px;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.button:hover{
+    background-color: #f0f0f0;
+}
