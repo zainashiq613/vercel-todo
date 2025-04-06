@@ -1,0 +1,35 @@
+.todoitem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.todoitem h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 13px;
+}
+
+.buttons button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.2em;
+  transition: all 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #555;
+}

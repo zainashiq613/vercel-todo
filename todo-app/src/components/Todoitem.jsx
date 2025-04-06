@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./Todoitem.module.css";
 
 export default function Todoitem({ todo, setTodos, setid, todos, setInput }) {
   function handledelete(id) {
@@ -9,12 +10,12 @@ export default function Todoitem({ todo, setTodos, setid, todos, setInput }) {
     setid(id);
   }
   return (
-    <div>
-      <h3>
-        {todo.name}
+    <div className={styles.todoitem}>
+      <h3>{todo.name}</h3>
+      <div className={styles.buttons}>
         <button onClick={() => handleedit(todo.id)}>Edit</button>
         <button onClick={() => handledelete(todo.id)}>Delete</button>
-      </h3>
+      </div>
     </div>
   );
 }

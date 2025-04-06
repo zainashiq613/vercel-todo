@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./Form.module.css";
 
 export default function Form({ id, todos, setTodos, setid, input, setInput }) {
   function handlesubmit(e) {
@@ -24,9 +25,16 @@ export default function Form({ id, todos, setTodos, setid, input, setInput }) {
   }
   return (
     <div>
-      <form onSubmit={handlesubmit}>
-        <input onChange={(e) => setInput(e.target.value)} value={input}></input>
-        <button type="submit">{id ? "Edit" : "Add"}</button>
+      <form onSubmit={handlesubmit} className={styles.form}>
+        <input
+          placeholder="Add a todo"
+          className={styles.input}
+          onChange={(e) => setInput(e.target.value)}
+          value={input}
+        ></input>
+        <button className={styles.button} type="submit">
+          {id ? "Edit" : "Add"}
+        </button>
       </form>
     </div>
   );
